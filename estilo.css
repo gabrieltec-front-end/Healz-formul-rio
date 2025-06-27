@@ -1,0 +1,149 @@
+
+*{
+    margin: 0;
+}
+
+
+body{
+    font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-size: 16px;
+  box-sizing: border-box;
+   background-image: linear-gradient(45deg,#010d27 40%,#023e8c 140%);
+   color: white;
+ 
+  
+}
+
+#logo{
+    margin-top: 2rem;
+   
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+ #logo img{
+    width: 50%;
+}
+
+h2{
+    color: white;
+}
+
+#mensagem{
+    text-align: center;
+    margin-bottom: 2rem;
+    
+}
+
+#form{
+    margin-bottom: 2rem;
+}
+
+form{
+    
+    width:70%;
+    margin: auto;
+    padding: 1rem;
+    border-radius: 0.9rem;
+    opacity: 1;
+    
+   
+}
+
+input{
+    margin-bottom: 1rem;
+    margin-left: 1rem;
+    padding: 1rem;
+    border-radius: 0.9rem;
+    border: none;
+    
+    background-color: white;
+    width: 90%;
+    transition: opacity 0.5s ease-in-out, transform 0.5s .2s;;
+    font-size: 1.1rem;
+    font-style: italic;
+   
+  
+}
+input::placeholder{
+    color: #010d27
+}
+
+input:hover{
+    transform: scale(1.1);
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+fieldset{
+    border: none;
+    margin: 1.3rem;
+}
+legend{
+    margin-bottom: 1rem;
+}
+.tamanho{
+    width: 41.5%;
+    display:inline;
+}
+
+ input[type="radio"] {
+         transform: scale(2); /* Aumenta o tamanho em 1.5 vezes */
+         width:10%;
+         transition: opacity 0.5s ease-in-out, transform 0.5s .2s;;
+       }
+
+       input[type="radio"]:hover{
+        
+    transform: scale(2.5);
+    opacity: 0.8;
+       }
+
+       #plano{
+        display: none;
+       }
+
+
+       #enviar{
+        width: 90%;
+        text-align: center;
+        align-items: center;
+        margin-left: 2rem;
+       }
+
+
+       @media only screen and (max-width:767px){
+
+
+
+        input{
+    margin-bottom: 1rem;
+    margin-left: 1rem;
+    padding: 1rem;
+    border-radius: 0.9rem;
+    border: none;
+    
+    background-color: white;
+    width: 90%;
+    transition: opacity 0.5s ease-in-out, transform 0.5s .2s;;
+    font-size: 1.1rem;
+    font-style: italic;
+   
+  
+}
+input[type="radio"] {
+         transform: scale(2); /* Aumenta o tamanho em 1.5 vezes */
+         width:15%;
+         transition: opacity 0.5s ease-in-out, transform 0.5s .2s;;
+       }
+
+
+
+
+       }
+
+       

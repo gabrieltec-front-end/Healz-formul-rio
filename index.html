@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function aparecerPlano(){
+           var elemento= document.getElementById("plano")
+           elemento.style.display="grid"
+        }
+
+        function desaparecerPlano(){
+              var elemento= document.getElementById("plano")
+           elemento.style.display="none"
+        }
+    </script>
+    <div id="container">
+    <div id="logo">
+        <h3><img src="logo_branca.png"></h3>
+    </div>
+    <div id="formulario">
+
+        <section id="mensagem">
+            <h2>Preencha o formulário para agilizar o processo</h2>
+        </section>
+        <section id="form">
+            <form>
+               <fieldset>
+                <legend><label for="nome">Nome</label></legend>
+                 <input id="nome" type="text" placeholder="Nome"><br>
+
+               </fieldset>
+               
+                <fieldset>
+                    <legend>Endereço</legend>
+                  
+
+   <input type="text" id="cidade" name="cidade" placeholder="Cidade" required><br>
+
+  
+  <input type="text" id="estado" name="estado" placeholder="Estado" required><br>
+
+
+   <input type="text" id="cep" name="cep" pattern="[0-9]{5}-[0-9]{3}" placeholder=" CEP 00000-000" required><br>
+
+   
+<input type="text" id="rua" name="rua" placeholder="Digite o nome da rua" required autocomplete="street-address"><br>
+
+
+ 
+  <input type="text" id="bairro" name="bairro" placeholder="Digite o bairro" required><br>
+
+  
+  <input type="text" id="numero" name="numero" class="tamanho" placeholder="numero" required>
+  
+  <input type="text" id="complemento" name="complemento" class="tamanho" placeholder="Complemento"> 
+
+
+  </fieldset>
+
+ <fieldset>
+    <legend>Possui Plano de Saúde:</legend>
+ <input type="radio" id="plano1" onclick="aparecerPlano()" name="plano" class="tamanho2" value="sim" ><label for="plano1">Sim</label>
+  <input type="radio" id="plano2" onclick="desaparecerPlano()" name="plano" class="tamanho2" value="não"><label for="plano2">Não</label><br>
+
+ </fieldset>
+ <fieldset id="plano">
+    <input type="text" id="num-plano"  placeholder="Numero da carteirinha">
+    <input type="text" placeholder="Nome do plano" >
+ </fieldset>
+
+ <input type="submit" id="enviar"  value="Enviar">
+
+ 
+
+            </form>
+        </section>
+
+
+    </div>
+
+    </div>
+    
+   
+    
+</body>
+</html>
